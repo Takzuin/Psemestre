@@ -1,7 +1,4 @@
 def main():
-
-
-def eleccion(a):
     print("Select 1 para sumar")
     print("Select 2 para resta")
     print("Select 3 para division")
@@ -27,7 +24,6 @@ def eleccion(a):
             multiplication(num1, num2)
 
 
-
 def suma(a, b):
     resultado =  a + b
     print(resultado)
@@ -46,3 +42,5 @@ def division(a, b):
 def multiplication(a, b):
     resultado = a * b
     print(resultado)
+
+main()
