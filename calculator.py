@@ -22,6 +22,9 @@ def main():
             num1 = int(input("Numero 1: "))
             num2 = int(input("Numero 2: "))
             multiplication(num1, num2)
+        case _:
+            print("Invalid")
+
 
 
 def suma(a, b):
