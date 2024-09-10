@@ -19,7 +19,14 @@ def main():
             print('Error: Dato Inválido')
             continue  # Continuar con la siguiente iteración si hay un error
         
-        if 1.0 <= nota_final <= 5.0:
+        if 1.0 <= nota_final <= 2.9:
+            print('Calificaion: Bajo')
+            print(f'Nota final: {nota_final:.2f}')
+        elif 2.9 <= nota_final <= 4.0:
+            print("Calificacion: Basico")
+            print(f'Nota final: {nota_final:.2f}')
+        elif 4.0 <= nota_final <= 5.0:
+            print("Calificacion: Superior")
             print(f'Nota final: {nota_final:.2f}')
         else:
             print('Ingresa notas entre el rango de 1.0 a 5.0')
