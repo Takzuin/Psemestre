@@ -1,9 +1,5 @@
-while True:
-    try:
-        horas = 0
-        valor_hora = 0
-        añost = 0
-        
+horas = 0
 
-    except ValueError: 
-        print('Error')
+def conseguir_horas():
+    valor = input('Valor hora:')
+    valor = input('Horas trabajadas: ')
