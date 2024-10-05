@@ -1,14 +1,17 @@
-import datetime
-lista_frutas = ['Avocado', 'Apple', 'Manzana']
+palabras = []
 
 
+print("Introduce las palabras (deja en blanco para terminar):")
+while True:
+    palabra = input("Palabra: ")
+    if palabra == "":
+        break
+    palabras.append(palabra)
 
-def fitrar_palabras(lista):
-    letra = input("Introduce la letra con la que deben comenzar las palabras: ").strip().lower()
-    nueva_lista = []
-    for i in lista:
-        if i == letra:
-            nueva_lista.append(i)
-    print(nueva_lista)
+letra = input("\nLetra por la que deben comenzar las palabras: ").lower()
 
-fitrar_palabras(lista_frutas) 
+
+print(f"\nPalabras que comienzan con '{letra}':")
+for palabra in palabras:
+    if palabra.lower().startswith(letra):
+        print(palabra)
