@@ -1,9 +1,16 @@
-lista = ['Hermione', 'Harry', 'Ron']
+
+nombres = []
+
+print("Introduce los nombres (deja en blanco para terminar):")
+while True:
+    nombre = input("Nombre: ")
+    if nombre == "":
+        break
+    nombres.append(nombre)
+
+nombres_ordenados = sorted(nombres)
 
 
-def ordenar_lista(n):
-    n.sort()
-
-
-ordenar_lista(lista)
-print(lista)
+print("\nLista de nombres en orden alfabético:")
+for nombre in nombres_ordenados:
+    print(nombre)
